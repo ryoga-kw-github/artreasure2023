@@ -24,13 +24,14 @@
             loading-screen="enabled: false;"
             arjs="sourceType: webcam; debugUIEnabled: false;"
         >
-                <a-image
-                    src="assets/asset.png"
-                    scale="10 10 10"
-                    gps-entity-place="latitude: 34.968627; longitude: 135.812456;"
-                ></a-image>
+          <a-camera gps-camera="minDistance:50; maxDistance:50" rotation-reader></a-camera>
 
-            <a-camera gps-camera="minDistance:50; maxDistance:50" rotation-reader></a-camera>
+          <a-image
+              src="assets/asset.png"
+              scale="10 10 10"
+              gps-entity-place="latitude: 34.968627; longitude: 135.812456;"
+          ></a-image>
+
         </a-scene>
     </body>
   </html>
